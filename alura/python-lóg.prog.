@@ -37,3 +37,19 @@ if idade < 18 or estudante == True:
     print("Tem direito a meia-entrada")
 else:
     print("Não tem direito a meia-entrada")
+
+"""Verificação da meia-entrada"""
+print("Informe a idade")
+idade = int(input())
+
+print("Você é estudante? (Sim ou Não)")
+estudante = str(input())
+
+preco_total = 40
+
+if idade <18 or estudante == True:
+    preco = preco_total / 2
+else:
+    preco = preco_total
+
+print("Valor total a pagar é:", preco)
