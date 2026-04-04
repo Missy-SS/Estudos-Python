@@ -53,3 +53,15 @@ else:
     preco = preco_total
 
 print("Valor total a pagar é:", preco)
+
+"""Programa de conversão de temperatura"""
+
+print("Conversor de temperatura de °C para °F")
+
+print("Digite a temperatura em Celsius")
+celsius = float(input())
+
+fahrenheit = (celsius * 9 / 5) + 32
+
+print("Temperatura em Fahrenheit =", fahrenheit, "°F")
+
