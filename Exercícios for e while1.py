@@ -69,4 +69,27 @@ for livro in livros:
         continue
     print(f"Livro disponível: {livro["nome"]}")
 
+#Cadastro de usuario
+nome_do_usuario = []
+senha_do_usuario = []
 
+
+
+usuario_cadastro = input("Cadastre seu nome de usuário: ")
+while len(usuario_cadastro) < 5:
+    print("O nome do usuário deve ter pelo menos 5 caracteres")
+    usuario_cadastro = input("Cadastre seu nome de usuário: ")
+
+
+senha_cadastro = input("Cadastre sua senha: ")
+while len(senha_cadastro) < 8:
+    print("A senha do usuário deve ter pelo menos 8 caracteres")
+    senha_cadastro = input("Cadastre sua senha: ")
+
+if len(usuario_cadastro) >= 5:
+    nome_do_usuario.append(usuario_cadastro)
+
+if len(senha_cadastro) >= 8:
+    senha_do_usuario.append(senha_cadastro)
+
+print("Cadastro realizado com sucesso!")
