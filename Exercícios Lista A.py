@@ -92,5 +92,41 @@ while numero != 0:
     else:
         print("Código Inválido!")
 
+#Exercício 3
+arquivo = "GravadordeDados.txt"
 
+dados = []
+categorias = []
+quantidades = []
+valores = []
+totais = []
+loop = [1]
+
+for item in loop:
+    entrada_categoria = str(input("Digite a categoria: "))
+    categorias.append(f"{entrada_categoria};")
+
+    entrada_quantidade = str(input("Digite a quantidade: "))
+    quantidades.append(f"{entrada_quantidade};")
+
+    entrada_valor = str(input("Digite o valor: "))
+    valores.append(f"{entrada_valor};")
+
+    Qtde = float(entrada_quantidade)
+    Val = float(entrada_valor)
+    Total = Qtde * Val
+
+    totais.append(Total)
+
+    dados.extend(categorias)
+    dados.extend(quantidades)
+    dados.extend(valores)
+
+    soma = sum(totais)
+
+    print(*dados)
+
+    print(f"{soma:.2f}")
+
+    loop.append(1)
 
