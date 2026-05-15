@@ -162,4 +162,63 @@ for media in medias:
 
 print(medias)
 
+#Exercicio 8
+
+
+def contar_vogais(texto):
+    texto = texto.lower()
+    vogais = "aeiou"
+    co = 0
+
+    for char in texto:
+        if char in vogais:
+            co += 1
+    return co
+
+def contar_consoantes(texto):
+    texto = texto.lower()
+    consoantes = "bcdfghjklmnpqrstvwxyz"
+    co = 0
+
+    for char in texto:
+        if char in consoantes:
+            co += 1
+    return co
+
+def contar_algarismos(texto):
+    texto = texto.lower()
+    algarismos = "0123456789"
+    co = 0
+
+    for char in texto:
+        if char in algarismos:
+            co += 1
+    return co
+
+def contar_caracteres_brancos(texto):
+    caracteres_brancos = " "
+    co = 0
+
+    for char in texto:
+        if char in caracteres_brancos:
+            co += 1
+    return co
+
+def contar_caracteres_especiais(texto):
+    texto = texto.lower()
+    co = 0
+
+    for char in texto:
+        if not char.isalnum():
+            co += 1
+    return co
+
+texto = input("Digite seu texto: ")
+
+print(contar_vogais(texto))
+print(contar_consoantes(texto))
+print(contar_algarismos(texto))
+print(contar_caracteres_brancos(texto))
+print(contar_caracteres_especiais(texto))
+
 
