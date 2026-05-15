@@ -221,4 +221,29 @@ print(contar_algarismos(texto))
 print(contar_caracteres_brancos(texto))
 print(contar_caracteres_especiais(texto))
 
+#Exercício 9
+lista_um = []
+lista_dois = []
+
+len(lista_um) = int(input("Digite o tamanho da lista um: "))
+len(lista_dois) = int(input("Digite o tamanho da lista dois: "))
+
+for i in range(len(lista_um)):
+    lista1 = int(input("Digite os valores da lista um: "))
+
+    lista_um.append(lista1)
+    
+
+for x in range(len(lisa_dois)):
+    lista2 = int(input("Digite os valores da lista dois: "))
+    lista_dois.append(lista2)
+
+nova_lista = [item for par in zip(lista_um, lista_dois) for item in par]
+
+print(nova_lista)
+        
+
+
+
+
 
