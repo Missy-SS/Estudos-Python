@@ -123,5 +123,43 @@ for item in loop:
 
 
     loop.append(1)
+#Exercício 5
+alunos = []
+medias = []
+
+N = 1
+
+numero_inteiro = int(input("Digite a quantidade de notas: "))
+
+while numero_inteiro <= 0:
+    print("Valor precisa ser diferente e maior que zero")
+    numero_inteiro = int(input("Digite a quantidade de notas: "))
+
+while N <= numero_inteiro:
+    print("Digite as notas dos alunos")
+    notas_alunos = float(input(f"{N}º nota: "))
+    alunos.append(notas_alunos)
+    N = N + 1
+
+
+soma_media = sum(alunos)
+
+Media = soma_media / numero_inteiro
+
+medias.append(Media)
+
+print(Media)
+
+for media in medias:
+    if Media > 6:
+        print("Aluno ficou acima da média")
+    elif Media == 6:
+        print("Aluno ficou na média")
+    else:
+        print("Aluno ficou abaixo da média")
+
+
+
+print(medias)
 
 
