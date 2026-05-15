@@ -143,7 +143,7 @@ while N <= numero_inteiro:
 
 
 soma_media = sum(alunos)
-
+#Não precisa das médias, os números colocados já são as médias
 Media = soma_media / numero_inteiro
 
 medias.append(Media)
