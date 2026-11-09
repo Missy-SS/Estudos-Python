@@ -1,0 +1,45 @@
+# Quando temos uma classe e queremos criar um restaurante novo, falamos que estamos instanciando, ou criando, um objeto, sendo que um objeto é a instância de uma classe.
+
+# O ponto seguido de uma instância de uma classe possibilita que nos o acessemos
+#round arredonda o cálculo entre parênteses
+# dir mostra atributos, métodos e propriedades de um objeto
+# vars exibe um dicionário desses atributos e métodos
+#__init__ método construtor; os __ indicam um método especial
+#self referencia da instancia atual usada naquele momento 
+#this é um padrão usado no Java e C#
+#o método property modifica a forma como um atributo é lido
+
+Para disponibilizar os dados para o front-end
+
+Ambientes Virtualizados
+AMB 01: Python  3.9.8 e Flask 2.3.3
+AMB 02: Python 3.11.6 Django 4.2
+
+ALTERNATIVA DO VENV = virtualenv
+
+A venv é uma biblioteca integrada ao Python 3.3 e versões posteriores, enquanto virtualenv é uma ferramenta externa que precisa ser instalada separadamente. Para versões mais recentes do Python (3.5 e acima), venv é recomendada, pois oferece funcionalidades semelhantes às do virtualenv e está disponível de forma padrão.
+
+A virtualenv é mais flexível quando se trata de trabalhar com diferentes versões do Python e interpretadores alternativos. Ele pode ser utilizado para criar ambientes virtuais para várias versões do Python, incluindo versões mais antigas que ainda são compatíveis com o virtualenv.
+
+A virtualenv é capaz de integrar-se a outras linguagens além do Python
+
+Embora ambos venv e virtualenv proporcionem isolamento de ambientes virtuais, virtualenv é conhecido por ter recursos adicionais para lidar com situações mais complexas, garantindo uma separação eficiente de dependências entre diferentes projetos.
+
+ativação da virtualenv = source <env>/bin/activate
+
+##API
+
+Expor informações do back-end através de uma ferramente comum entre a maioria das linguagens
+
+Requisição/Request = Quero acessar uma página
+
+Resposta/Response = Retorna as informações/dados desejados
+
+Servidor ouve as requisições para enviar uma Resposta
+
+ARQUIVO JSON
+
+forma de notação de objetos JS, podem ser representados de uma forma comum em diversas linguagens 
+
+
+

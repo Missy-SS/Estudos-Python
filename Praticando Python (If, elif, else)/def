@@ -1,0 +1,80 @@
+"""repetição do mesmo código
+Funções são blocos de códigos reutilizáveis 
+
+def, seguida do nome da função (nome_da_função()). Entre parênteses, passamos os parâmetros da função, que podem ser obrigatórios ou opcionais. 
+
+Usamos dois-pontos (:) para abrir o escopo e fazemos uma indentação para incluir o bloco de código da função, que pode ou não retornar um valor.
+"""
+def nome_da_função(parâmetros):
+    # Bloco de código da função
+    return valor_opcional
+
+def ola_mundo(nome):
+    return f"Olá, {nome}!"
+
+"""nome é um parâmetro, que são variáveis declaradas no momento da criação da função
+
+Isso torna o código mais flexível, pois podemos alterá-los sem modificar o código. Nesta função, retornamos uma f-string com "Olá, " seguido do nome.
+
+Para chamar a função, basta usar o nome da função (ola_mundo()) e, entre parênteses, passar o parâmetro, que também pode ser chamado de argumento. 
+"""
+def ola_mundo(nome):
+    return f"Olá, {nome}!"
+
+print(ola_mundo("Melissa"))
+
+"""Função simples
+
+Criadas e personalizadas pela própria pessoa desenvolvedora para realizar tarefas específicas
+
+A função somar() que recebe dois parâmetros: a e b. No escopo da função, há uma variável chamada soma que armazena a soma de a e b. Ao final, ela retorna o valor da soma, ou seja, return soma.
+"""
+
+def somar(a, b):
+    soma = a + b
+    return soma
+
+"""
+Para trabalhar com eles fora da função, será necessário criar outra variável.
+"""
+
+"""Função com parâmetros padrão
+Na função cumprimentar() exibida abaixo, o parâmetro nome assume o valor padrão "Visitante". 
+"""
+
+def cumprimentar(nome = "Visitante"):
+    print(f"Olá, {nome}!")
+
+cumprimentar() # Saída: Olá, Visitante!
+cumprimentar("Jade") # Saída: Olá, Jade!
+
+"""
+Se não passarmos nenhum parâmetro ao chamar a função, ela assume o valor padrão e retorna "Olá, Visitante!". Podemos alterar esse valor passando outro parâmetro, como cumprimentar("Jade"), por exemplo, que retorna o texto "Olá, Jade!".
+"""
+"""Função Built-in
+podem ser utilizadas diretamente, sem necessidade de importação ou definição
+"""
+
+
+"""
+Função de interação
+Método          Conceito            Exemplo                 Saída
+print()         Exibe valores no    print("Olá Mundo")      Olá Mundo
+                console
+input()         Lê uma entradado usuário como string        nome = input("Digite:")         Digite: Júnior
+"""
+
+"""
+Função de manipulação
+type() - retorna o tipo de objeto - type (10) - <class 'int'>
+
+isinstance() - Verifica se um objeto pertence a um tipo específico ou a uma tupla de tipos. True se for do tipo indicado, False se não for
+isinstance(10.5, int) - False
+isinstance("Python",(int, str)) - True
+
+len() - Retorna o tamanho de uma string, lista ou tupla - len("Python") - 6
+bool() - Converte uma valor para True ou False - bool(1) - True
+list() - Converte um iterável para um lista - list("abc") - ["a","b","c"]
+dict() - Cria um dicionário - dict (nome = "Ana") - {"nome": "Ana"}
+set() - Cria um conjunto - set ([1, 2, 3]) - {1, 2, 3, 4}
+"""

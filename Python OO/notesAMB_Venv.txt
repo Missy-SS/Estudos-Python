@@ -1,0 +1,14 @@
+#No include: cabeçalho dos ambientes e do modulos que precisamos que seja escritos no projeto
+
+#A lib: armazena todos os pacotes e dependências que instalamos no ambiente virtual
+- Ela contém o pip, que é responsável por fazer todas as instalações
+
+#Bin possui os scripts relacionados ao ambiente virtual
+
+#pyvenv.cfg contém informações sobre nosso ambiente virtual,onde ele está localizado, a versão executada, etc
+
+para ativá-lo é necessário ir ao terminal e digitar: source venv/bin/activate
+
+para desativá-lo é necessário ir ao terminal e digitar: deactivate
+
+O pip é um módulo de gerenciamento de pacotes do python, similar ao npm
